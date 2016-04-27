@@ -96,7 +96,7 @@ total.steps
 hist(total.steps$steps, main = "Total number of steps taken each day", xlab = "Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)
+![](https://github.com/hfkltc/RepData_PeerAssessment1/blob/master/unnamed-chunk-4-1.png)
 
 ###3. Calculate and report the mean and median of the total number of steps taken per day
 
