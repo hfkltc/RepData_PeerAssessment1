@@ -128,7 +128,7 @@ interval.steps <- aggregate(steps ~ interval, activity, FUN = function(x) {mean(
 with(interval.steps, plot(interval, steps, type = "l", main = "Average daily activity pattern", ylab = "Averaged number of steps"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)
+![](https://github.com/hfkltc/RepData_PeerAssessment1/blob/master/unnamed-chunk-6-1.png)
 
 ###2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -177,7 +177,7 @@ total.steps.imputed <- aggregate(steps ~ date, imputed.activity, FUN = function(
 hist(total.steps.imputed$steps, main = "Total number of steps taken each day (imputed)", xlab = "Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)
+![](https://github.com/hfkltc/RepData_PeerAssessment1/blob/master/unnamed-chunk-11-1.png)
 
 ```r
 mean.steps.imputed <- mean(total.steps.imputed$steps)
@@ -279,4 +279,4 @@ interval.steps.wday <- aggregate(steps ~ interval + wDayEnd, imputed.activity, F
 qplot(interval, steps, data = interval.steps.wday, facets = wDayEnd~., geom = "line")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)
+![](https://github.com/hfkltc/RepData_PeerAssessment1/blob/master/unnamed-chunk-13-1.png)
